@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"strconv"
 )
 
 var (
@@ -16,6 +17,7 @@ func main() {
 	j = 22
 	j = float32(i)
 	str := "sai"
-	fmt.Println(i, a, j, str, x)
+	l := strconv.Itoa(a)
+	fmt.Println(i, a, j, str, x, l)
 	fmt.Printf("%v, %T", j, j)
 }
